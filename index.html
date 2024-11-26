@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Contacto</title>
+    <!-- Enlace a Bootstrap CDN -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            display: flex;
+            justify-content: center;
+            padding-top: 80px; /* Espacio para la barra de navegación */
+        }
+        .form-container {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-light bg-light fixed-top">
+        <div class="container">
+            <span class="mx-auto h4 mb-0">Contactos Krah</span>
+        </div>
+    </nav>
+    <div class="form-container">
+        <h3 class="text-center mb-4">Formulario de Contacto</h3>
+        <form>
+            <div class="form-group">
+                <label for="nombre">Nombre</label>
+                <input type="text" class="form-control" id="nombre" placeholder="Nombre" required>
+            </div>
+            <div class="form-group">
+                <label for="apellido">Apellido</label>
+                <input type="text" class="form-control" id="apellido" placeholder="Apellido" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Email" required>
+            </div>
+            <div class="form-group">
+                <label for="telefono">Teléfono</label>
+                <input type="tel" class="form-control" id="telefono" placeholder="Teléfono" required>
+            </div>
+            <div class="form-group">
+                <label for="empresa">Empresa u Organismo</label>
+                <input type="text" class="form-control" id="empresa" placeholder="Empresa u Organismo">
+            </div>
+            <div class="form-group">
+                <label for="area">Área</label>
+                <input type="text" class="form-control" id="area" placeholder="Área">
+            </div>
+            <div class="form-group">
+                <label for="esUsted">¿Es usted...</label>
+                <select class="form-control" id="esUsted">
+                    <option>Seleccionar...</option>
+                    <option>Cliente</option>
+                    <option>Proveedor</option>
+                    <option>Empleado</option>
+                    <option>Otro</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="motivoConsulta">Motivo de consulta</label>
+                <select class="form-control" id="motivoConsulta">
+                    <option>Seleccionar...</option>
+                    <option>Soporte Técnico</option>
+                    <option>Información General</option>
+                    <option>Consultas de Facturación</option>
+                    <option>Otro</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="mensaje">Mensaje</label>
+                <textarea class="form-control" id="mensaje" rows="4" placeholder="Escribe tu mensaje aquí"></textarea>
+            </div>
+            <!-- Simulación de Captcha -->
+            <div class="form-group">
+                <label for="captcha">Complete el captcha: 5 + 3 = ?</label>
+                <input type="text" class="form-control" id="captcha" placeholder="Respuesta" required>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Enviar</button>
+        </form>
+    </div>
+</body>
+</html>
